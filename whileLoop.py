@@ -10,7 +10,21 @@
 #         n += 1
 # print(nextTenNumbers(7))
 
-x="mielonka"
-while x:
-    print(x, end=' ')
-    x = x[1:]
+# x="mielonka"
+# while x:
+#     print(x, end=' ')
+#     x = x[1:]
+
+def pattern(x):
+    i = 5
+    nextX = 0
+    while i>0:
+        if nextX ==0:
+            sum = str(x)
+        else:
+            sum =  str(nextX) +" "+ str(x)
+        print(sum)
+        nextX = sum
+        x += 1
+        i -= 1
+pattern(5)
