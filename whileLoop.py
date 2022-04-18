@@ -14,6 +14,19 @@
 # while x:
 #     print(x, end=' ')
 #     x = x[1:]
+def is_prime(num):
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    return True
+def get_primes(max_num):
+    output = []
+    for i in range(2, max_num+1):
+        if is_prime(i):
+            output.append(i)
+    return output
+print(get_primes(11))
+
 
 def pattern(startPoint,lenght):
     nextX = 0
@@ -26,4 +39,4 @@ def pattern(startPoint,lenght):
         nextX = sum
         startPoint += 1
         lenght -= 1
-pattern(3,9)
+# pattern(6, 9)
