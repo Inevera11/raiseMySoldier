@@ -2,18 +2,20 @@
 #so I think I need to clone everything...
 
 
-# def nextTenNumbers(n):
-#     i=1
-#     while i < 11:
-#         i += 1
-#         print(n)
-#         n += 1
+def nextTenNumbers(n):
+    i=1
+    while i < 11:
+        i += 1
+        print(n)
+        n += 1
 # print(nextTenNumbers(7))
 
-# x="mielonka"
-# while x:
-#     print(x, end=' ')
-#     x = x[1:]
+def cutFirstLetter(word: str) -> str:
+    while word:
+        print(word, end=' ')
+        word = word[1: ]
+# cutFirstLetter("Kocham")
+
 def is_prime(num):
     for i in range(2, num):
         if num % i == 0:
@@ -25,7 +27,7 @@ def get_primes(max_num):
         if is_prime(i):
             output.append(i)
     return output
-print(get_primes(11))
+# print(get_primes(11))
 
 
 def pattern(startPoint,lenght):
