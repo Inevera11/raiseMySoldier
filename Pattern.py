@@ -10,8 +10,11 @@ def pattern(startPoint,lenght):
         startPoint += 1
         lenght -= 1
 # pattern(6, 9)
+# pattern(8,5)
 
 def pyramid(topNumber,lenght):
+    if lenght<0:
+        lenght = lenght*(-1)
     if topNumber<0:
         topNumber = topNumber*(-1)
     loop = lenght
@@ -33,8 +36,16 @@ def pyramid(topNumber,lenght):
         loop -= 1
 # pyramid(10,15)
 # pyramid(-1,4)
+# pyramid(8,15)
+# pyramid(20,-1)
+
 
 def symetricPyramid(top, lenght):
+    if lenght<0:
+        print(''' 
+        Nie chcesz się bawić to nie.
+         ''')
+        return 0
     if top<0:
         top = top*(-1)
     loop = lenght
@@ -54,3 +65,4 @@ def symetricPyramid(top, lenght):
         loop -= 1
 # symetricPyramid(6,7)
 # symetricPyramid(9,11)
+# SsymetricPyramid(5,-13)
