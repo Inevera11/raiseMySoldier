@@ -30,4 +30,4 @@ def get_primes_better(max_num):
             primes.append(i)
     return primes
 
-# print(get_primes_better(28))
+print(get_primes_better(28))
