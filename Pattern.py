@@ -65,4 +65,4 @@ def symetricPyramid(top, lenght):
         loop -= 1
 # symetricPyramid(6,7)
 # symetricPyramid(9,11)
-# SsymetricPyramid(5,-13)
+symetricPyramid(5,-13)
