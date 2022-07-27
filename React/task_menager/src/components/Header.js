@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Button } from "./Button";
 
 // const headingStyle = { color: "red", backgroundColor: "yellow" };
 
@@ -10,7 +11,7 @@ const Header = (props) => {
           {/* style={headingStyle} */}
           {props.title}
         </h1>
-        <button className="btn">Add</button>
+        <Button text="Add" />
       </header>
     </div>
   );
