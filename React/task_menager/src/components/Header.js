@@ -5,11 +5,12 @@ import PropTypes from "prop-types";
 const Header = (props) => {
   return (
     <div>
-      <header>
+      <header className="header">
         <h1>
           {/* style={headingStyle} */}
           {props.title}
         </h1>
+        <button className="btn">Add</button>
       </header>
     </div>
   );
