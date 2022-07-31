@@ -38,10 +38,16 @@ const App = () => {
       remainder: false,
     },
   ]);
+
+  // Delete task
+  const deleteTask = (id) => {
+    console.log("Delete", id);
+  };
+
   return (
     <div className="Container">
       <Header title="Task tracker" />
-      <Tasks tasks={tasks} />
+      <Tasks tasks={tasks} onDelete={deleteTask} />
     </div>
   );
 };
