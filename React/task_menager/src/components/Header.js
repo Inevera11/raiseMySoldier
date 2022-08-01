@@ -3,19 +3,23 @@ import { Button } from "./Button";
 
 // const headingStyle = { color: "red", backgroundColor: "yellow" };
 
-const Header = (props) => {
-  const onClick = () => {
-    console.log("clicked");
-  };
+const Header = ({ title, onAdd, showAdd }) => {
+  // const onClick = () => {
+  //   console.log("clicked");
+  // };
 
   return (
     <div>
       <header className="header">
         <h1>
           {/* style={headingStyle} */}
-          {props.title}
+          {title}
         </h1>
-        <Button text="Add" onClick={onClick} />
+        <Button
+          color={showAdd ? "red" : "green"}
+          text={showAdd ? "Close form" : "Add"}
+          onClick={onAdd}
+        />
       </header>
     </div>
   );
