@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
+import AddTask from "./components/AddTask";
 import { useState } from "react";
 
 // function App() {
@@ -56,6 +57,7 @@ const App = () => {
   return (
     <div className="Container">
       <Header title="Task tracker" />
+      <AddTask />
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
       ) : (
