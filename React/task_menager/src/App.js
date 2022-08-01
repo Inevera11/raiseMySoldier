@@ -17,37 +17,50 @@ const App = () => {
       id: 1,
       text: "Dentist Appointment",
       day: "Feb 26th at 2.30",
-      remainder: true,
+      reminder: true,
     },
     {
       id: 2,
       text: "Singing in the shower",
       day: "everyday at 4.30",
-      remainder: true,
+      reminder: true,
     },
     {
       id: 3,
       text: "coding",
       day: "Jun 20th at 11.30",
-      remainder: false,
+      reminder: false,
     },
     {
       id: 4,
       text: "Mati;s Birthday",
       day: "Sep 5th at 5.30",
-      remainder: false,
+      reminder: false,
     },
   ]);
 
   // Delete task
   const deleteTask = (id) => {
-    console.log("Delete", id);
+    setTasks(tasks.filter((task) => task.id !== id));
+  };
+
+  // Toggle reminder
+  const toggleReminder = (id) => {
+    setTasks(
+      tasks.map((task) =>
+        task.id === id ? { ...task, reminder: !task.reminder } : task
+      )
+    );
   };
 
   return (
     <div className="Container">
       <Header title="Task tracker" />
-      <Tasks tasks={tasks} onDelete={deleteTask} />
+      {tasks.length > 0 ? (
+        <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
+      ) : (
+        "No task to show"
+      )}
     </div>
   );
 };
