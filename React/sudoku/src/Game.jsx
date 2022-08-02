@@ -30,7 +30,7 @@ import { Board } from "./Board";
 const Game = () => {
   return (
     <>
-      Hi there
+      Hi there. Wanna play Tic Tac Toe?
       <Board />
     </>
   );

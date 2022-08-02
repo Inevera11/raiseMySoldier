@@ -23,7 +23,7 @@ const styles = {
 
 export const Square = ({ value, setValue }) => {
   return (
-    <button onClick={() => setValue("X")} style={styles}>
+    <button onClick={() => setValue()} style={styles}>
       {value}
     </button>
   );
