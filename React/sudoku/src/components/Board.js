@@ -24,22 +24,19 @@ export const Board = () => {
     setPlayer(player === "X" ? "O" : "X");
     setValues(newArr);
   };
-
   return (
-    <div>
+    <div className="squares">
       {winner ? (
         <h2>The winner is {player}</h2>
       ) : (
         values.map((item, id) => (
-          <div className={id}>
-            <Square
-              key={id}
-              value={item}
-              setValue={() => {
-                changeSquare(id);
-              }}
-            />
-          </div>
+          <Square
+            key={id}
+            value={item}
+            setValue={() => {
+              changeSquare(id);
+            }}
+          />
         ))
       )}
     </div>
