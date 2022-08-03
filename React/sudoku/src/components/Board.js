@@ -24,6 +24,7 @@ export const Board = () => {
     setPlayer(player === "X" ? "O" : "X");
     setValues(newArr);
   };
+
   return (
     <div className="squares">
       {winner ? (

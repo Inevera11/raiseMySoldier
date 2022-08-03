@@ -5,18 +5,17 @@
 // }
 
 const styles = {
-  // background: "#fff",
+  background: "#fff",
   border: "1px solid #999",
-  float: "left",
-  fontSize: "24px",
+  fontSize: "70px",
   fontWeight: "bold",
   lineHeight: "34px",
-  height: "34px",
-  marginRight: "-1px",
-  marginTop: "-1px",
+  height: "100px",
+  marginRight: "-5px",
+  marginTop: "-5px",
   padding: 0,
   textAlign: "center",
-  width: "34px",
+  width: "100px",
 };
 
 export const Square = ({ value, setValue }) => {

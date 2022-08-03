@@ -5,10 +5,26 @@
   margin: 0;
   padding: 0;
 }
+h1{
+  text-align: center;
+  margin: 20px;
+}
+h2{
+  text-align: justify;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
 }
-button {
-  background-color: blue;
+
+.squares{
+
+display: grid ;
+column-gap: 2px;
+row-gap: 2px;
+grid-template-columns: 100px 100px 100px;
+grid-template-rows: 100px 100px 100px;
+justify-content: center;
+margin-top: 50px;
+
 }
