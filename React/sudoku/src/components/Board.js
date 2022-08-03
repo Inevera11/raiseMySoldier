@@ -31,13 +31,15 @@ export const Board = () => {
         <h2>The winner is {player}</h2>
       ) : (
         values.map((item, id) => (
-          <Square
-            key={id}
-            value={item}
-            setValue={() => {
-              changeSquare(id);
-            }}
-          />
+          <div className={id}>
+            <Square
+              key={id}
+              value={item}
+              setValue={() => {
+                changeSquare(id);
+              }}
+            />
+          </div>
         ))
       )}
     </div>

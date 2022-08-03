@@ -1,5 +1,3 @@
-import React from "react";
-
 // export const Square = (props) => {
 //   return (
 //     <button>{props.value}</button>
@@ -7,7 +5,7 @@ import React from "react";
 // }
 
 const styles = {
-  background: "#fff",
+  // background: "#fff",
   border: "1px solid #999",
   float: "left",
   fontSize: "24px",
@@ -23,7 +21,7 @@ const styles = {
 
 export const Square = ({ value, setValue }) => {
   return (
-    <button onClick={() => setValue("X")} style={styles}>
+    <button onClick={() => setValue()} style={styles}>
       {value}
     </button>
   );
