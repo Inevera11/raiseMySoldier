@@ -44,8 +44,9 @@ export const Board = () => {
           values.at(4) === values.at(6) &&
           values.at(2) !== null)
       )
-        return setWinner(true), setPlayer(player === "X" ? "O" : "X");
-      return;
+        return [setWinner(true), setPlayer(player === "X" ? "O" : "X")];
+      if (!values.includes(null) && !winner)
+        return [setWinner(true), setPlayer("yet to come")];
     };
     isWinner(values);
   }, [values]);

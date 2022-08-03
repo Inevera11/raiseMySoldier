@@ -5,5 +5,5 @@ import reportWebVitals from "./reportWebVitals";
 import Game from "./Game.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Game items={["item1", "item2", "item3"]}>I am a child</Game>);
+root.render(<Game items={["item1", "item2", "item3"]} />);
 reportWebVitals();
