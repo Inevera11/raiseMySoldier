@@ -30,7 +30,6 @@ import { Board } from "./components/Board";
 const Game = () => {
   return (
     <h1>
-      Hi there. Wanna play Tic Tac Toe?
       <Board />
     </h1>
   );
