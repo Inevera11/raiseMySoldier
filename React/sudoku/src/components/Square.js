@@ -1,8 +1,26 @@
+import React from "react";
+import styled from "styled-components";
+
 // export const Square = (props) => {
 //   return (
 //     <button>{props.value}</button>
 //   )
 // }
+
+const ButtonStyled = styled.button`
+  background-color: #ffffff;
+  border: 1px solid #999;
+  font-size: 70px;
+  font-weight: bold;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #000000;
+  }
+`;
+
+// const evenMoreButtonStyled = styled(ButtonStyled)` dziedzic
+// `
 
 const styles = {
   background: "#fff",
@@ -19,9 +37,5 @@ const styles = {
 };
 
 export const Square = ({ value, setValue }) => {
-  return (
-    <button onClick={() => setValue()} style={styles}>
-      {value}
-    </button>
-  );
+  return <ButtonStyled onClick={() => setValue()}>{value}</ButtonStyled>;
 };

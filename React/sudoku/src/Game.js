@@ -30,6 +30,7 @@ import { Board } from "./components/Board";
 const Game = () => {
   return (
     <h1>
+      Tic tac toe game
       <Board />
     </h1>
   );

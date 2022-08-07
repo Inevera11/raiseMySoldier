@@ -25,21 +25,23 @@ export const Board = () => {
     setValues(newArr);
   };
 
-  return [
-    <div className="squares">
+  return (
+    <React.Fragment>
       {winner ? (
         <h2 className="result"> The winner is {player} </h2>
       ) : (
-        values.map((item, id) => (
-          <Square
-            key={id}
-            value={item}
-            setValue={() => {
-              changeSquare(id);
-            }}
-          />
-        ))
+        <div className="squares">
+          {values.map((item, id) => (
+            <Square
+              key={id}
+              value={item}
+              setValue={() => {
+                changeSquare(id);
+              }}
+            />
+          ))}
+        </div>
       )}
-    </div>,
-  ];
+    </React.Fragment>
+  );
 };
